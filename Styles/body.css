@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: #c5f0ff81;
+}
+#banner img{    
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+h2{
+    size: 48px;
+    text-align: center;
+    margin: 2em;
+    color: #1e465f;
+}
+article.text{
+    width: 80vw;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    color: #1e465f;
+    font-size: 18px;
+    
+}
+div.line{
+    width: 60vw;
+    padding-top: 4em;
+    margin: auto;
+    justify-content: center;
+    color: #1e465f;
+    size: 100%;
+}
+a.start{    
+    color: #1e465f;
+    text-decoration: none;
+    transition: 0.3s;
+    position: fixed;
+    cursor: pointer;
+    top: 91vh;
+    right: 4%;
+    border: none;
+}
+a.start:hover {
+    color: #ffffff;
+    background-color: #1e465f;
+    border-radius: 30px;
+    padding: 0.5em;
+}
+div#map{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4em;
+}
+.socialMedia{
+    margin: auto;
+    text-align: center;
+    padding-top: 4em;
+}
+.socialMedia img{
+    width: 2em;
+    height: auto;
+    padding-right: 1em;
+}
+.socialMedia img:hover {
+    width: 2.5em;
+    height: auto;
+}
+p{
+    margin: 1em;
+}

@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.titles{
+    width: 40vw;
+    height: 30vh;
+    background-image: url("/Images/diva.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+    margin:auto;
+    margin-top: 2em;
+    border-radius: 30px;
+}
+.titles .galery{
+    width: 500%;
+    animation-name: anima;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    display: flex;
+    text-align: center;
+}
+.titles .galery h2{
+    width: 40%;
+    margin-top: 13vh;
+}
+.galery a{
+    color: #ffffff;
+    
+}
+@keyframes anima {
+    0%{margin-left: 0;}
+    5%{margin-left: 0;}
+    10%{margin-left: -100%;}
+    30%{margin-left: -100%;}
+    35%{margin-left: -200%;}
+    55%{margin-left: -200%;}
+    60%{margin-left: -300%;}
+    80%{margin-left: -300%;}
+    85%{margin-left: -400%;}
+    95%{margin-left: -400%;}
+    100%{margin-right: -500%;}
+}
+#container{
+    width: 80vw;
+    margin: auto;
+}
+.date{
+    display: block;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    margin: 2em;
+    color: #1e465f;
+}
+.content p{
+    margin-top: 2em;
+    color: #1e465f;
+}
+.author{
+    display: block;
+    font-size: larger ;
+    text-align: right;
+    margin: 2em;
+    right: 10%;
+    color: #1e465f;
+    margin-bottom: -1em;
+}

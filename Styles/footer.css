@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+footer p{
+    display: block;
+    font-size: small;
+    font-style: italic;
+    position: absolute;
+    text-align: right;
+    margin: 2em;
+    padding: 5px 0px 2em 0px;   
+    right: 10%;
+    color: #1e465f;
+}
