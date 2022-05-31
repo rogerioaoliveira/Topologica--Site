@@ -1,106 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
+body, ul {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', sans-serif;
+}    
+ul{
+    padding-right: 3em;
 }
 a{
-    color: #1e465f;
-    text-decoration: none;
-    transition: 0.3s;
+  color:#1e465f;
+  text-decoration: none;
+  transition: 0.3s;
 }
 ul a:hover {
-    color: #ffffff;
-    background-color: #1e465f;
-    border-radius: 30px;
-    padding: 0.5em;
-}
-.logo{
-    letter-spacing: 4px;
+  color: #ffffff;
+  background-color: #1e465f ;
+  border-radius: 30px;
 }
 .logo img{
-    width: 17em;
-    height: auto;
+  display: flex;
+  width: 17em;
+  height: auto;
+  margin-left: 3em;
 }
 .logo img:hover{
-    width: 19em;
+  width: 19em;
+  height: auto;
+}
+#header {
+  box-sizing: border-box;
+  height: 9em;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+#btn-mobile {
+  display: none;
+}
+@media (max-width: 850px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 50vw;
+    top: 144px;
+    right: 0px;
+    background: #FFFFFF;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 144px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .logo img{
+    display: flex;
+    width: 15em;
     height: auto;
-}
-nav{
+  }
+  .logo img:hover{
+    width: 15em;
+    height: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-radius: 0;
+  }
+  #btn-mobile {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #ffffff;
-    height: 12vh;
-    padding: 20px 0px 20px 0px;
-}
-.nav-list{
-    list-style: none;
-    display: flex;
-}
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 2em;
-    font-weight: 600;
-}
-.mobile-menu{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
     cursor: pointer;
-    display: none;
-}
-.mobile-menu div{
-    width: 2em;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: #1e465f;
+
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
     height: 2px;
-    background: #1e465f;
-    margin: 0.5em;
-    transition: 0.3s ease-in-out;
-}
-@media (max-width:999px) {
-    body{
-        overflow-x: hidden;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+    color: #1e465f;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  a.start{
+    display: none;
+  }
+  #map iframe{
+      width: 70vw;
+      height: 40vh;
+  }
+}@media (max-width: 600px) {
+    .logo img{
+        width: 11em;
+        height: auto;
+        margin-left: 0.2em;
     }
-    .nav-list{
-        margin-top: 3em;
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 35vw;
-        height: 92vh;
-        background: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: 0.3s ease-in;
-    }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu{
-        display: block;
-    }
-    a.start{
-        display: none;
-    }
-}
-.nav-list.active{
-    transform: translateX(0);
-}
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-.mobile-menu.active .line1{
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-.mobile-menu.active .line2{
-    opacity: 0;
-}
-.mobile-menu.active .line3{
-    transform: rotate(45deg) translate(-5px, -7px);
 }

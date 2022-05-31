@@ -21,25 +21,22 @@
     </head>
 
     <body>
-        <header>
-            <nav>
-                <a class="logo" href="/index.html"><img id="top" src="/Images/logo.webp" alt="Logotipo da Associação Psicanalítica Topológica"></a>
-                
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-
-                <ul class="nav-list">
-                    <li><a href="/index.html#about">Sobre a Topológica</a></li>
-                    <li><a href="/index.html#activities">Atividades</a></li>
-                    <li><a href="/index.html#associates">Associados</a></li>
-                    <li><a href="/index.html#contacts">Contato</a></li>
-                    <li><a href="/Pages/Articles.html">Artigos</a></li>
-                </ul>        
+        <header id="header">
+            <a class="logo" href="/index.html"><img name="top" src="/Images/logo.webp" alt="Logotipo da Associação Psicanalítica Topológica" width="432" ></a>
+            <nav id="nav">
+              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+              </button>
+              <ul id="menu" role="menu">
+                <li><a href="/index.html#about">Sobre a Topológica</a></li>
+                <li><a href="/index.html#activities">Atividades</a></li>
+                <li><a href="/index.html#associates">Associados</a></li>
+                <li><a href="/index.html#contacts">Contato</a></li>
+                <li><a href="/Pages/Articles.html">Artigos</a></li>
+              </ul>
             </nav>
-        </header>
+          </header>
+          <script src="/Scripts/mobile-navbar.js"></script>
 
         <main>
             <section class="titles">
@@ -190,9 +187,9 @@
         </main>
 
         <script src="/Scripts/mobile-navbar.js"></script>
-        
-        <footer>
-            <p>&copy; 2022 - Rogério A. Oliveira.</p>
-        </footer>
     </body>
+        
+    <footer>
+        <p>&copy; 2022 - <a href="https://www.linkedin.com/in/raoliveiradev/" target="_blank">Rogério A. Oliveira.</a></p>
+    </footer>
 </html>

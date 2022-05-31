@@ -21,35 +21,33 @@
 
     <body> 
 
-        <header>        
-            <nav>
-                <a class="logo" href="/index.html"><img id="top" src="/Images/logo.webp" alt="Logotipo da Associação Psicanalítica Topológica"></a>
-            
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-
-                <ul class="nav-list">
-                    <li><a href="/index.html#about">Sobre a Topológica</a></li>
-                    <li><a href="/index.html#activities">Atividades</a></li>
-                    <li><a href="/index.html#associates">Associados</a></li>
-                    <li><a href="/index.html#contacts">Contato</a></li>
-                    <li><a href="/Pages/Articles.html">Artigos</a></li>
-                </ul>
+        <header id="header">
+            <a class="logo" href="/index.html"><img name="top" src="/Images/logo.webp" alt="Logotipo da Associação Psicanalítica Topológica" width="432" ></a>
+            <nav id="nav">
+              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+              </button>
+              <ul id="menu" role="menu">
+                <li><a href="/index.html#about">Sobre a Topológica</a></li>
+                <li><a href="/index.html#activities">Atividades</a></li>
+                <li><a href="/index.html#associates">Associados</a></li>
+                <li><a href="/index.html#contacts">Contato</a></li>
+                <li><a href="/Pages/Articles.html">Artigos</a></li>
+              </ul>
             </nav>
-        </header>
+          </header>
+          <script src="/Scripts/mobile-navbar.js"></script>
+
 
         <main>
             <div id="banner">
                 <img src="/Images/banner.webp" alt="Banner que mostra do lago esquerdo Sigmund Freud e do lado direito Jacques Lacan, pais da psicanálise moderna.">
             </div>
 
-            <section>                
-                <article class="text">
-                    <h2 id="about">Sobre a Topológica</h2>
+            <section>      
+                <h2 id="about">Sobre a Topológica</h2>
 
+                <article class="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra vel. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Eget felis eget nunc lobortis mattis aliquam faucibus. Ut aliquam purus sit amet luctus venenatis lectus. Mattis enim ut tellus elementum sagittis vitae. Aliquam vestibulum morbi blandit cursus risus at. Vel eros donec ac odio. Vulputate eu scelerisque felis imperdiet proin fermentum leo. Netus et malesuada fames ac turpis. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Est ultricies integer quis auctor elit sed vulputate mi. Felis donec et odio pellentesque diam. Quis hendrerit dolor magna eget est lorem ipsum dolor. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Nibh sit amet commodo nulla facilisi. Cursus in hac habitasse platea dictumst quisque sagittis purus. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Egestas maecenas pharetra convallis posuere morbi leo.</p>
 
                     <p>Egestas maecenas pharetra convallis posuere. Id leo in vitae turpis massa sed elementum tempus. Scelerisque viverra mauris in aliquam. Nisi est sit amet facilisis magna etiam. Purus faucibus ornare suspendisse sed nisi lacus sed. At lectus urna duis convallis convallis. Et ultrices neque ornare aenean euismod. Tristique magna sit amet purus gravida quis blandit. Duis at consectetur lorem donec massa sapien faucibus. Convallis convallis tellus id interdum velit. Elit pellentesque habitant morbi tristique senectus. Auctor urna nunc id cursus metus. Mollis aliquam ut porttitor leo a. Odio euismod lacinia at quis risus sed. Non arcu risus quis varius quam. Nibh tellus molestie nunc non. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. Feugiat nibh sed pulvinar proin. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.</p>
@@ -67,9 +65,9 @@
             </section>
 
             <section>            
-                <article class="text">                
-                    <h2 id="activities">Atividades</h2>
+                <h2 id="activities">Atividades</h2>
 
+                <article class="text">            
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Ut diam quam nulla porttitor massa id. Neque gravida in fermentum et. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Non pulvinar neque laoreet suspendisse. Nunc mattis enim ut tellus elementum sagittis vitae. Sit amet aliquam id diam maecenas ultricies. Nibh tortor id aliquet lectus proin nibh nisl. Neque egestas congue quisque egestas diam in. Nascetur ridiculus mus mauris vitae ultricies leo integer. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque.</p>
 
                     <p>Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Odio eu feugiat pretium nibh ipsum consequat. Malesuada proin libero nunc consequat. A scelerisque purus semper eget duis at tellus at urna. Eros donec ac odio tempor. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Placerat duis ultricies lacus sed. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Lobortis mattis aliquam faucibus purus in massa tempor. Pellentesque nec nam aliquam sem. Et egestas quis ipsum suspendisse ultrices gravida dictum. Nunc lobortis mattis aliquam faucibus purus.</p>
@@ -83,9 +81,9 @@
             </section>
 
             <section>
-                <article class="text">
-                    <h2 id="associates">Associados</h2>
+                <h2 id="associates">Associados</h2>
 
+                <article class="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Ut diam quam nulla porttitor massa id. Neque gravida in fermentum et. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Non pulvinar neque laoreet suspendisse. Nunc mattis enim ut tellus elementum sagittis vitae. Sit amet aliquam id diam maecenas ultricies. Nibh tortor id aliquet lectus proin nibh nisl. Neque egestas congue quisque egestas diam in. Nascetur ridiculus mus mauris vitae ultricies leo integer. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque.</p>
 
                     <p>Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Odio eu feugiat pretium nibh ipsum consequat. Malesuada proin libero nunc consequat. A scelerisque purus semper eget duis at tellus at urna. Eros donec ac odio tempor. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Placerat duis ultricies lacus sed. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Lobortis mattis aliquam faucibus purus in massa tempor. Pellentesque nec nam aliquam sem. Et egestas quis ipsum suspendisse ultrices gravida dictum. Nunc lobortis mattis aliquam faucibus purus.</p>    
@@ -97,9 +95,9 @@
             </section>
 
             <section>            
+                <h2 id="contacts">Contato</h2>
+                
                 <article class="text">
-                    <h2 id="contacts">Contato</h2>
-
                     <div id="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.9809962030085!2d-48.55814848521012!3d-27.594118782838958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273821b563cedb%3A0x83801b8d14253f0!2sR.%20Felipe%20Schmidt%20-%20Centro%2C%20Florian%C3%B3polis%20-%20SC%2C%2088010-400!5e0!3m2!1spt-PT!2sbr!4v1651501427385!5m2!1spt-PT!2sbr" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -138,9 +136,9 @@
         <span>
             <a class="start" href="/index.html#top">Topo</a>
         </span>
-
-        <footer>
-            <p>&copy; 2022 - Rogério A. Oliveira.</p>
-        </footer>
     </body>
-</html>
+
+    <footer>
+        <p>&copy; 2022 - <a href="https://www.linkedin.com/in/raoliveiradev/" target="_blank">Rogério A. Oliveira.</a></p>
+    </footer>
+</html>    
