@@ -131,4 +131,7 @@ ul a:hover {
         height: auto;
         margin-left: 0.2em;
     }
+    h1{
+      font-size: 48px;
+    }
 }

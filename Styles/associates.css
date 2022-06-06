@@ -1,0 +1,31 @@
+div.associates{
+    width: 30%;
+    height: auto;
+    border: 2px solid #1e465f;
+    border-radius: 10px;
+    padding: 0.7em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 5px 5px #1e465f63;
+}
+
+@media (max-width: 970px) {
+    .associates p{
+        font-size: small;
+        overflow: hidden;
+    }
+    div.associates{
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    h3, h4{
+        font-size: medium;
+        overflow: hidden;
+    }
+    div.associates{
+        width: 70%;
+    }
+}
