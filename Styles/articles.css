@@ -31,6 +31,23 @@
     color: #ffffff;
     
 }
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+li.page-item{
+    margin-right: 2rem;
+}
+a.page-link:hover {
+    color: #ffffff;
+    background-color: #1e465f;
+    border-radius: 30px;
+    padding: 0.5em;
+}
 @keyframes anima {
     0%{margin-left: 0;}
     5%{margin-left: 0;}
@@ -77,5 +94,8 @@
     .titles{
         width: 60vw;
         height: 20vh;
+    }
+    .pagination{
+        font-size: 16px;
     }
 }
