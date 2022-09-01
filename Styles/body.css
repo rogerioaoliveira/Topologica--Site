@@ -99,10 +99,11 @@ p{
 }
 table{
     margin: auto;
+    width: 65vw;
 }
 td{
     margin: auto;
-    padding: 1.5em;
+    padding: 1em;
     text-align: center;
 }
 .botaoComprar{
@@ -142,6 +143,9 @@ td{
     }
 }
 @media (max-width: 670px) {
+    table{
+        margin-left: -1em;
+    }
     .botaoComprar{
         size: 10px;
         width: 20vw;
@@ -155,6 +159,6 @@ td{
         margin-bottom: 2em;
     }
     td{
-        padding: 0.5em;
+        padding: 0.2em;
     }
 }
