@@ -1,0 +1,29 @@
+#polit{
+    margin: auto;
+    width: 70%;
+}
+p{
+    padding-bottom: 0.3em;
+    color: #1e465f;
+    
+}
+h2, h3{
+    padding: 2em;
+    color: #1e465f;
+}
+h3{
+    font-size: 25px;
+}
+li{
+    padding-bottom: 0.3em;
+    color: #1e465f;
+    
+}
+li p{
+    padding: 2em;
+    color: #1e465f;
+}
+span{
+    font-style: italic;
+    padding-left: 0.5em;
+}
